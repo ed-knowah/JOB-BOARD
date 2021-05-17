@@ -12,7 +12,6 @@ const cors = require("cors");
 app.use(cors());
 app.set("view engine", "ejs");
 app.use(express.static("public"));
-//app.use(methodOverride("_method"));
 app.use(bodyParser.urlencoded({ extended: true }));
 mongoose.set("useFindAndModify", false);
 mongoose.set("useCreateIndex", true);
