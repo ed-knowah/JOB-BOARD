@@ -22,7 +22,7 @@ const validateJob = Joi.object({
   title: Joi.string().min(4).required(),
   description: Joi.string().required(),
   location: Joi.string().required(),
-  type: Joi.string().required(),
+  jobType: Joi.string().required(),
   amount: Joi.string().required(),
   email: Joi.string().required().email(),
 });
